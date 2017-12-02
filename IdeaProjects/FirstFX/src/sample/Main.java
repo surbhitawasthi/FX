@@ -11,31 +11,38 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 
-public class Main extends Application implements EventHandler<ActionEvent>
+public class Main extends Application
 {
-    Button bt;
+    Button bt1, bt2;
     @Override
     public void start(Stage primaryStage) throws Exception
     {
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("FirstFX");
-        bt=new Button();
-        bt.setText("Click Me!");
+        //bt1=new Button();
+        bt2=new Button();
+        //bt1.setText("Click Me!");
+        bt2.setText("Dont click me");
+        /*bt1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Yoyoyo");
+            }
+        });*/
 
-        bt.setOnAction(this);
+        //LAMBDA INTERFACE
 
+        //bt1.setOnAction(e -> System.out.println("Lambda wali calling"));
+        bt2.setOnAction(e -> {
+            System.out.println("Second button clicked");
+            System.out.println("Have fun");
+        });
         StackPane layout=new StackPane();
-        layout.getChildren().add(bt);
+        //layout.getChildren().add(bt1);
+        layout.getChildren().add(bt2);
         Scene scene=new Scene(layout, 300,250);
         primaryStage.setScene(scene);
         primaryStage.show();
-    }
-
-    @Override
-    public void handle(ActionEvent event)
-    {
-        if(event.getSource().equals(bt))
-            System.out.println("Button is clicked");
     }
 
     public static void main(String[] args)
