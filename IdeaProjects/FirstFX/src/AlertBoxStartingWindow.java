@@ -14,7 +14,12 @@ public class AlertBoxStartingWindow extends Application
         window.setTitle("Alert Boxes");
 
         Button bt=new Button("Click me!!!");
-        bt.setOnAction(e -> AlertBox.display("title for alert box","Alert box label"));
+//        bt.setOnAction(e -> AlertBox.display("title for alert box","Are you sure to save?"));
+        bt.setOnAction(e ->
+        {
+            boolean res=ConfirmBox.display("title for alert box","Are you sure you want to save");
+            System.out.println(res);
+        });
 
         StackPane sp=new StackPane();
         sp.getChildren().add(bt);
