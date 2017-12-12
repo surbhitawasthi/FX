@@ -1,0 +1,40 @@
+.root/*The background*/
+{
+    /*Background color*/
+    -fx-background-color: #383838;
+    /*Font size*/
+    -fx-font-size: 11pt;
+}
+.label
+{
+    /*To change text color inside a label*/
+    -fx-text-fill: #f0f0ff;
+}
+.button
+{
+   /*To change background color*/
+   /* -fx-background-color: #ab4642; */
+   -fx-background-color: linear-gradient(#ffffff, #ab4642);
+
+   /*TO Change text in button use: */
+   /* -fx-text-fill: #f0f0ff; */
+
+   /*Roundness of button*/
+   -fx-background-radius: 4pt;
+}
+
+.button-blue
+{
+   -fx-background-color: #7cafc2;
+   -fx-text-fill: #ffffff;
+   -fx-background-radius: 4pt;
+}
+/*
+Q.How to make an ID?
+A.Use '#'
+  eg.
+*/
+#bold-label
+{
+    -fx-font-weight: bold;
+}
