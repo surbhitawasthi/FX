@@ -11,6 +11,29 @@
     <Label>
         <text>This is label 2</text>
     </Label>
-    <Button text="Submit" fx:id="button" onAction="#handleButtonClick"/>
+    <!--<Button text="Submit" fx:id="button" onAction="#handleButtonClick"/>-->
+
+    <!--Binding Demo-->
+
+
+
+    <Label text="First Label" fx:id="firstLabel" />
+    <Label text="${firstLabel.text}" /> <!--Binding Line-->
+
+
+    <!--Reusabiltiy-->
+
+    <Label text="Difficulty" />
+
+    <!--When you require to use an object over and over and over again
+    then you need to define it a reusable object-->
+
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup" />
+    </fx:define>
+
+    <RadioButton text="Easy" toggleGroup="$toggleGroup" />
+    <RadioButton text="Medium" toggleGroup="$toggleGroup" /> <!-- $ sign is used to reference things-->
+    <RadioButton text="Hard" toggleGroup="$toggleGroup" />
 
 </VBox>

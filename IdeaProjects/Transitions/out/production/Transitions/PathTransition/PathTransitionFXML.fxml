@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#setCoordinates" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PathTransition.Controller">
+   <center>
+      <JFXButton fx:id="bt" alignment="CENTER" buttonType="RAISED" onAction="#btClicked" prefHeight="76.0" prefWidth="75.0" style="-fx-background-color: #ff0000; -fx-background-radius: 2000;" text="Hey" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Text fx:id="mouseMotion" onMouseMoved="#setCoordinates" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

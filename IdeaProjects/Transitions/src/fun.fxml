@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Hello MNNIT" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="70.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+         <padding>
+            <Insets top="75.0" />
+         </padding>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" StackPane.alignment="TOP_CENTER">
+         <image>
+            <Image url="@logo_hack36_front.png" />
+         </image>
+         <effect>
+            <InnerShadow height="34.78" radius="10.41" width="8.86" />
+         </effect>
+         <StackPane.margin>
+            <Insets top="10.0" />
+         </StackPane.margin>
+      </ImageView>
+   </children>
+   <effect>
+      <Glow level="0.5" />
+   </effect>
+</StackPane>
