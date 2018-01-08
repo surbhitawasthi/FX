@@ -1,1 +1,3 @@
-Not of any use perhaps
+# Just for Fun
+
+For practicing purposes.
